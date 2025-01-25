@@ -46,6 +46,6 @@ page_sidebar(
         nav_panel("Plot", plotOutput("line")),
         
         # Panel with table ----
-        nav_panel("Table", tableOutput("table"))
+        nav_panel("Table", dataTableOutput("table"))
     )
 )

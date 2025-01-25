@@ -88,4 +88,8 @@ function(input, output, session) {
             }
         }
     })
+    
+    output$table <- renderDataTable({
+        plot_data()
+    })
 }
