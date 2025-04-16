@@ -42,9 +42,9 @@ page_sidebar(
         # Panel with scatter plot ----
         #nav_panel("Scatter", plotOutput("scatter")),
         
-        # Panel with line plot ----
-        nav_panel("Plot", plotOutput("line")),
-        
+        # Panel with line plot (depending on plotly or ggplot, comment out correct one) ----
+        # nav_panel("Plot", plotOutput("line")),
+        nav_panel("Interactive Plot", plotlyOutput("line")),
         # Panel with table ----
         nav_panel("Table", dataTableOutput("table"))
     )

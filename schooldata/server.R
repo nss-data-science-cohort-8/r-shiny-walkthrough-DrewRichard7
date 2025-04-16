@@ -29,6 +29,12 @@ function(input, output, session) {
             return(NULL) # Safely handle empty plots
         }
         
+        # output$distPlot <- renderPlot({
+        #     
+        #     validate(
+        #         need(input$gourd_type != "", "Please select a gourd.")
+        #     )
+        
         filtered_data |> 
             select(school_name, subject, grade, pct_below_bsc:pct_adv) |> 
             rowwise() |> 
